@@ -8,6 +8,12 @@
   src: url("./include/RobotoCondensed.ttf") format("truetype");
 }
 
+/* Custom font added */
+@font-face {
+  font-family: "CityBrawler";
+  src: url("../include/CityBrawlersBoldCaps.otf") format("opentype");
+}
+
 /* Class used for transcriptions, example: Kana -> Romaji (Japanese to Roman alphabet) */
 .tsh_transcript {
   font-size: 60%;
@@ -40,8 +46,30 @@
   transform-origin: left;
 }
 
-/* Main theme -- Dark Gradient */
+/* Irish Impact Theme */
 :root {
+  --font: "CityBrawler";
+  --border-radius: 16px;
+  --text-color: white;
+  --bg-color: #18181b;
+  --p1-score-bg-color: linear-gradient(
+    135deg,
+    rgba(186, 23, 90, 1) 0%,
+    rgba(186, 23, 90, 1) 100%
+  );
+  --p2-score-bg-color: linear-gradient(
+    225deg,
+    rgba(19, 103, 175, 1) 0%,
+    rgba(19, 103, 175, 1) 100%
+  );
+  --p1-sponsor-color: #ba175a;
+  --p2-sponsor-color: #1367af;
+  --p1-score-color: white;
+  --p2-score-color: white;
+}
+
+/* Main theme -- Dark Gradient */
+/* :root {
   --font: "RobotoCondensed";
   --border-radius: 16px;
   --text-color: white;
@@ -60,7 +88,7 @@
   --p2-sponsor-color: #29b6f6;
   --p1-score-color: white;
   --p2-score-color: white;
-}
+} */
 
 /* Uncomment for themes */
 

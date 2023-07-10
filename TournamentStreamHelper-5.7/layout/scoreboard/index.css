@@ -13,6 +13,12 @@
   src: url("../include/Roboto-Regular.ttf") format("truetype");
 }
 
+@font-face {
+  font-family: "CityBrawler";
+  src: url("../include/CityBrawlersBoldCaps.otf") format("opentype");
+}
+
+
 body {
   font-family: var(--font);
   font-weight: bold;
@@ -100,6 +106,7 @@ body {
   background-position: 100% 0;
   left: 380px;
   flex-direction: row;
+  background-image: url("black-bg1.jpg");
 }
 
 .fgc .p1.container {
@@ -122,6 +129,7 @@ body {
   background-position: 0 0;
   right: 380px;
   flex-direction: row-reverse;
+  background-image: url("black-bg2.jpg");
 }
 
 .fgc .p2.container {
@@ -155,7 +163,7 @@ body {
   padding-right: 8px;
   box-sizing: border-box;
   max-width: 100%;
-  font-size: 30px;
+  font-size: 10px;
 }
 
 .chips {
@@ -277,7 +285,7 @@ body {
 }
 
 .name_twitter .name {
-  font-size: 32px;
+  font-size: 50px;
 }
 
 .fgc .name_twitter .name {
@@ -286,7 +294,7 @@ body {
 
 .sf6 .name_twitter .name {
   width: 100%;
-  font-size: 30px;
+  font-size: 50px; /*Azhar */
 }
 
 .fgc .p1 .name_twitter .name .text {
@@ -400,6 +408,7 @@ body {
   width: 80px;
   height: 80px;
   top: 924px;
+  opacity:66% /* Azhar */
 }
 
 .info.container {
@@ -437,7 +446,7 @@ body {
 }
 
 .tournament_name {
-  font-size: 22px;
+  font-size: 36px;
   width: 100%;
   height: 100%;
 }
@@ -448,6 +457,9 @@ body {
   width: 300px;
   font-size: 16px;
   padding: 8px 16px;
+  background-color: white; /* Azhar */
+  color: black; /* Azhar */
+  background-image: url("Flag_of_Ireland.svg.png"); /* Azhar */
 }
 
 .tekken7 .info.container.top {
@@ -478,6 +490,8 @@ body {
   height: 64px;
   font-size: 20px;
   padding: 4px 16px;
+  opacity: 66%; /* Azhar */
+  background-image: url("black-bg3.jpg");
 }
 
 .phase {
@@ -487,7 +501,7 @@ body {
 }
 
 .sf6 .phase {
-  font-size: 20px;
+  font-size: 30px;
   letter-spacing: 2px;
 }
 
@@ -498,7 +512,7 @@ body {
 }
 
 .sf6 .match {
-  font-size: 30px;
+  font-size: 44px;
   letter-spacing: 2px;
 }
 
@@ -516,7 +530,7 @@ body {
   top: unset;
   bottom: 0;
   width: 400px;
-  height: 64px;
+  height: 74px;
   padding: 0px 20px;
 }
 
@@ -530,6 +544,7 @@ body {
 .flagstate {
   display: flex;
   justify-content: center;
+
 }
 
 .icon .text:not(.text_empty) {
@@ -584,8 +599,8 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  width: 36px;
-  height: 24px;
+  width: 46px;
+  height: 34px;
   border-radius: 4px;
 }
 
@@ -656,7 +671,7 @@ body {
 }
 
 .sf6 .score {
-  font-size: 34px;
+  font-size: 64px;
 }
 
 .p1 .score {
@@ -708,9 +723,9 @@ body {
 }
 
 .p1 .losers {
-  background: #ff3837ff;
+  background: #ba175a;
 }
 
 .p2 .losers {
-  background: #308affff;
+  background: #1367af;
 }
